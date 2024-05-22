@@ -11,7 +11,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "angular-cli-ghpages:deploy",
           "options": {
             "outputPath": "dist/weather",
             "index": "src/index.html",
@@ -88,6 +88,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
